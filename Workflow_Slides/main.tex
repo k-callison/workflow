@@ -87,6 +87,7 @@
                 \item Automate everything that can be automated.
                 \item Write a single script that executes all code from beginning to end.
             \end{itemize}
+        \bigskip
         \item Application:
             \begin{itemize}
                 \item README file
@@ -101,6 +102,7 @@
             \begin{itemize}
                 \item Start Here
             \end{itemize}
+        \medskip
         \item Contents:
             \begin{itemize}
                 \item Project description
@@ -108,10 +110,10 @@
                 \item Instructions for data access
                 \item Special considerations for software prep (e.g., user written Stata commands)
             \end{itemize}
-        \item Example:
+        \medskip
+        \pause\item Example:
             \begin{itemize}
                 \item \color{blue} \href{https://github.com/hollina/macroeconomic_conditions_and_opioid_abuse}{Hollingsworth, A., Ruhm, C. J., \& Simon, K. (2017). Macroeconomic Conditions and Opioid Abuse. Journal of Health Economics, 56, 222–233.}
-                \item Callison, K., Pesko, M.F., Phillips, S., \& Sosa, J.A. (2024). Health Care Utilization Following the Adoption of Paid Sick Leave Mandates. 
             \end{itemize}
     \end{itemize}
 \end{frame}
@@ -122,12 +124,14 @@
             \begin{itemize}
                 \item Roadmap for the analytic process
             \end{itemize}
+        \medskip
         \item Contents:
             \begin{itemize}
                 \item Series of well-annotated statements that run script files for data cleaning, analysis, table/figure creation, etc.
                 \item Includes commands to clear output files/tables/figures.
             \end{itemize}
-        \item Example:
+        \medskip
+        \pause\item Example:
             \begin{itemize}
                 \item \color{blue} \href{https://github.com/k-callison/hpam7660-sp24/blob/main/resources/agb_masterfile.pdf}{Goodman-Bacon, A. (2021). The Long-Run Effects of Childhood Insurance Coverage: Medicaid Implementation, Adult Health, and Labor Market Outcomes. American Economic Review, 111(8): 2550-93.}
             \end{itemize}
@@ -141,6 +145,7 @@
                 \item Store code and data under version control.
                 \item Run the whole directory before checking it back in.
             \end{itemize}
+        \medskip
         \item Application:
             \begin{itemize}
                 \item File repository (GitHub)
@@ -154,6 +159,7 @@
             \begin{figure}
                 \includegraphics[scale=0.55]{files.png}
             \end{figure}
+        \bigskip
         \item How it works:
             \begin{itemize}
                 \item Maintain one file (e.g., regressions.log).
@@ -169,7 +175,7 @@
     \end{figure}    
 \end{frame}
 
-\begin{frame}{Project Workflow}
+\begin{frame}{Project Workflow - Version Control}
     \begin{itemize}
         \item Gentzkow and Shapiro (2014): Version Control
             \begin{itemize}
@@ -179,6 +185,7 @@
                         \item[-] \textbf{Run your master file before each push.} 
                     \end{itemize}
             \end{itemize}
+        \medskip
         \item Application:
             \begin{itemize}
                 \item File repository (GitHub)
@@ -194,6 +201,7 @@
                 \item Separate files into inputs and outputs.
                 \item Make directories portable.
             \end{itemize}
+        \medskip
         \item Application:
             \begin{itemize}
                 \item Directory map in your README file
@@ -219,6 +227,28 @@
     \end{figure}    
 \end{frame}
 
+\begin{frame}{Project Workflow - Directory Management}
+    \begin{itemize}
+        \item Example directory map:
+    \end{itemize}
+    \begin{figure}
+        \includegraphics[scale=0.37]{directory_flow.png}
+    \end{figure}    
+\end{frame}
+
+\begin{frame}{Project Workflow - Directory Management}
+    \begin{itemize}
+        \item Navigating directories (Stata example):
+    \end{itemize}
+    \begin{figure}
+        \includegraphics[scale=0.5]{globals.png}
+    \end{figure}  
+        \bigskip
+    \begin{itemize}
+        \pause\item Note: be carefule using globals to define lists of control variables when using multiple .do files.
+    \end{itemize}  
+\end{frame}
+
 \begin{frame}{Project Workflow - Project Management}
     \begin{itemize}
         \item Gentzkow and Shapiro (2014): Management
@@ -226,6 +256,7 @@
                 \item Manage tasks with a task management system.
                 \item Email is not a task management system.
         \end{itemize}
+        \medskip
         \item Application:
             \begin{itemize}
                 \item GitHub Issues and Task Lists
@@ -237,6 +268,19 @@
     \begin{figure}
         \includegraphics[scale=0.45]{manage.png}
     \end{figure}    
+\end{frame}
+
+\begin{frame}{Project Workflow - Tools}
+    \begin{itemize}
+        \item Tools for an efficient project workflow:
+        \smallskip
+            \begin{itemize}
+                \item Statistical software: R or Stata
+                \item Word processing software: LaTeX or Markdown/Quarto
+                \item Integrated development environment (IDE): RStudio, Stata, or Visual Studio Code (VS Code)
+                \item Version control: Git and GitHub
+            \end{itemize}
+        \end{itemize}
 \end{frame}
 
 \end{document}
